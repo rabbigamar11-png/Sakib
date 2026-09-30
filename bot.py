@@ -2,7 +2,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # আপনার টেলিগ্রাম বট টোকেনটি এখানে বসান
-BOT_TOKEN = "8376308044:AAHuFai8EErp1BiqoF7h"
+BOT_TOKEN = "8376308044:AAHuFai8EErp1BiqoF7hsfnX2hcRHGWFs6Q"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # ইমেইল স্টক (এখানে বিক্রির ইমেইলগুলো জমা থাকবে)
@@ -97,4 +97,3 @@ def callback_listener(call):
                 bot.answer_callback_query(call.id, "⚠️️ দুঃখিত, বর্তমানে ইমেইল স্টক খালি আছে!", show_alert=True)
 
 bot.polling(none_stop=True)
-
