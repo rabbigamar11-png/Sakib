@@ -29,7 +29,7 @@ def send_welcome(message):
 # সাপোর্ট অপশন হ্যান্ডলার
 @bot.callback_query_handler(func=lambda call: call.data == "support")
 def callback_support(call):
-    support_text = "📞 যেকোনো সাহায্যের জন্য যোগাযোগ করুন: @rabbi_com1"
+    support_text = "📞 যেকোনো সাহায্যের জন্য যোগাযোগ করুন: @Rakibul_income"
     bot.answer_callback_query(call.id)
     bot.send_message(call.message.chat.id, support_text)
 
