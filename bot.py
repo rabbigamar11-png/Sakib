@@ -38,3 +38,4 @@ if __name__ == "__main__":
     print("Nexora Shop Bot is running successfully...")
     bot.infinity_polling()
 
+
